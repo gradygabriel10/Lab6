@@ -103,9 +103,6 @@ class JournalEntry extends HTMLElement {
       // append the image element to the appropriate location in this component
       entries.append(image);
 
-
-
-
       // CODE GOES HERE ^^^
 
       /* ------------- do not edit this code, it is for your debugging purposes ------------- */
@@ -128,10 +125,13 @@ class JournalEntry extends HTMLElement {
 
       // CODE GOES HERE vvv
 
+      // Create an audio element with the correct class
       var audio = document.createElement("audio");
+      // Set the audio src and enable audio controls
       audio.className = "entry-audio"
       audio.src = entry.audio;
       audio.controls = true;
+      // Append the audio element to the appropriate location in this component
       entries.append(audio);
       
       // CODE GOES HERE ^^^
